@@ -1,0 +1,6 @@
+discord.py-self==2.0.1
+python-dotenv==1.1.1
+selenium==4.33.0
+termcolor==3.1.0
+undetected_chromedriver==3.5.5
+webdriver_manager==4.0.2

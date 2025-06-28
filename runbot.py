@@ -8,7 +8,14 @@ from enum import Enum
 from dataclasses import dataclass
 import os
 
+import undetected_chromedriver as uc
+
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = uc.Chrome(version_main=135)
+
 
 
 @dataclass
@@ -43,11 +50,9 @@ async def on_message(message: Message):
         print("Not valid prizepick:", message.content)
         return
 
-    slip = ProSlip()
-    slip.link
-
     await message.add_reaction("🌭")
-    await pp_history(message.channel, limit=4)
+    driver.get(message.content)
+    await message.add_reaction("✅")
 
 
 if __name__ == "__main__":

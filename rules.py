@@ -1,7 +1,7 @@
 from discord import TextChannel
 from dataclasses import dataclass
 
-
+# Edit with channel/guild IDs that you want to monitor
 ACCEPTABLE_CHANNELS = [1341888392627097716]
 ACCEPTABLE_GUILDS = [1341888392627097713]
 ACCEPTABLE_ROLES = ["@&1341949739259658242"]

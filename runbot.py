@@ -52,7 +52,8 @@ async def on_message(message: Message):
 
     await message.add_reaction("🌭")
     driver.get(message.content)
-    await message.add_reaction("✅")
+
+    # Add button click logic here
 
 
 if __name__ == "__main__":
